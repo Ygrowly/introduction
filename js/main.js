@@ -709,6 +709,15 @@ document.addEventListener('DOMContentLoaded', () => {
     <button class="back-to-top" title="回到顶部">↑</button>
   `);
 
+  // 添加业务推广冒泡框
+  document.body.insertAdjacentHTML('beforeend', `
+    <div class="business-bubble" title="点击了解更多">
+      <span class="bubble-title">🚀 承接各类开发：</span>
+      <div class="bubble-services">小程序 · App · 鸿蒙 · iOS · Web 网页</div>
+      <span class="bubble-cta">👉 技术落地，让想法成真！</span>
+    </div>
+  `);
+
   // 初始化网站
   new PersonalSite();
 });
